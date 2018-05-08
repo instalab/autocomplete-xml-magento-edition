@@ -1,0 +1,36 @@
+{
+  "name": "autocomplete-xml-magento-edition",
+  "main": "./lib/main",
+  "version": "0.9.5",
+  "description": "Autocomplete+ provider for XML via XSD (Magento Edition)",
+  "keywords": [
+    "xml",
+    "xsd",
+    "autocomplete",
+    "magento"
+  ],
+  "activationCommands": {},
+  "repository": "https://github.com/instalab/autocomplete-xml-magento-edition",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "xml2js": "0.4.15",
+    "uuid": "^2.0.1"
+  },
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "getProvider"
+      }
+    }
+  },
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    }
+  }
+}
